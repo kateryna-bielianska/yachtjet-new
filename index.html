@@ -25,39 +25,34 @@
         <a class="logo" href="./index.html">yachtjet</a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Yachts</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#yachts">Yachts</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews">Reviews</a></li>
           </ul>
         </nav>
         <ul class="soc-list">
           <li class="soc-item">
-            <a
-              class="soc-link"
-              href="https://www.instagram.com/"
-              target="_blank"
-              aria-label="link to Instagram"
-              >IG</a
-            >
-          </li>
+           <a class="soc-link" href="https://www.instagram.com/" target="_blank" aria-label="link to Instagram">
+    <svg class="soc-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-ph_instagram-logo-fill"></use>
+    </svg>
+  </a>
+</li>
           <li class="soc-item">
-            <a
-              class="soc-link"
-              href="https://www.youtube.com/"
-              target="_blank"
-              aria-label="link to YouTube"
-              >YT</a
-            >
-          </li>
-          <li class="soc-item">
-            <a
-              class="soc-link"
-              href="https://www.facebook.com/"
-              target="_blank"
-              aria-label="link to Facebook"
-              >Fb</a
-            >
-          </li>
+  <a class="soc-link" href="https://www.youtube.com/" target="_blank" aria-label="link to YouTube">
+    <svg class="soc-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-entypo-social_youtube-with-circle"></use>
+    </svg>
+  </a>
+</li>
+
+<li class="soc-item">
+  <a class="soc-link" href="https://www.facebook.com/" target="_blank" aria-label="link to Facebook">
+    <svg class="soc-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-ic_outline-facebook"></use>
+    </svg>
+  </a>
+</li>
         </ul>
       </div>
     </header>
@@ -256,7 +251,18 @@
               width="658"
             />
           </div>
+          <div class="form-wrapper">
           <h2 class="order-title">Rent a yacht now</h2>
+<form class="form-rent">
+  <label class="form-label"> <input class="form-input" type="text" name="name" placeholder="Full name"/></label>
+ <label class="form-label"><input class="form-input" type="email" name="email" placeholder="Email"/></label> 
+<label class="form-label"><input class="form-input" type="tel" name="phone" placeholder="Phone number"/></label>
+ <label class="form-label-textarea"><textarea class="form-textarea" name="comment" placeholder="Comment"></textarea></label>
+<button class="form-btn" type="submit">Send</button>
+
+</form>
+
+          </div>
         </div>
       </section>
       <section class="reviews-section">

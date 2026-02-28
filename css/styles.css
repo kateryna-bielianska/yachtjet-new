@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Inter", sans-serif;
   background: #0e1823;
@@ -67,6 +70,10 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 1080px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 32px;
 }
 .logo {
   font-weight: 500;
@@ -83,6 +90,7 @@ button {
   gap: 4px;
 }
 .nav-item {
+  
 }
 .nav-link {
   display: flex;
@@ -101,18 +109,23 @@ button {
 .soc-list {
   display: flex;
   gap: 8px;
+
 }
 .soc-item {
 }
 .soc-link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
+  align-items: center;    
+  width: 24px;            
+  height: 24px;    
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #1b414b;
 }
 
+.soc-icon {
+  fill: currentColor;
+}
 .soc-link:hover,
 .soc-link:focus {
   color: #062730;
@@ -124,6 +137,10 @@ button {
 .hero-section {
   padding-top: 235px;
   padding-bottom: 180px;
+  background-image: linear-gradient(to top,rgb(17, 19, 31),rgba(17, 19, 31, 0.4),rgba(17, 19, 31, 0)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  width: 1280px;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 500;
@@ -368,7 +385,67 @@ button {
   font-size: 48px;
   line-height: 1;
   letter-spacing: -0.02em;
+  margin-bottom: 50px;
 }
+
+.form-rent {
+width: 472px;
+}
+.form-label {
+  margin-bottom: 18px;
+  display: block;
+}
+.form-label-textarea {
+  margin-bottom: 50px;
+  display: block;
+}
+.form-input {
+background-color: transparent;
+border: 1px solid rgba(251, 251, 251, 0.2);
+border-radius: 12px;
+padding: 18px;
+width: 472px;
+height: 54px;
+
+}
+
+.form-textarea {
+resize: none;
+width: 100%;
+border: 1px solid rgba(251, 251, 251, 0.2);
+border-radius: 12px;
+padding: 18px;
+height: 116px;
+background-color: transparent;
+
+}
+
+.form-btn {
+  border-radius: 15px;
+padding: 18px 75px;
+width: 194px;
+height: 56px;
+background-color: #1b414b;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.1;
+letter-spacing: -0.02em;
+color: #fbfbfb;
+border: none;
+transition: background-color 250ms ease-in-out,color 250ms ease-in-out;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+
+}
+
+.form-input:focus,.form-textarea:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+
 
 /* #endregion */
 
